@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Website</h1>
+    <button id="inquiryFormButton">Inquiry Form</button>
+    <button id="adminLoginButton">Admin Login (Press F8)</button>
+  </div>
+
+  <!-- Inquiry Form Modal -->
+  <div id="inquiryFormModal" class="modal">
+    <div class="modal-content">
+      <h2>Inquiry Form</h2>
+      <form id="inquiryForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <button class="close-button">Close</button>
+    </div>
+  </div>
+
+  <!-- Admin Login Modal -->
+  <div id="adminLoginModal" class="modal">
+    <div class="modal-content">
+      <h2>Admin Login</h2>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button id="adminLoginSubmit">Login</button>
+      <button class="close-button">Close</button>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div id="adminDashboard" class="modal">
+    <div class="modal-content">
+      <h2>Admin Dashboard</h2>
+      <h3>Inquiry List</h3>
+      <ul id="inquiryList"></ul>
+      <h3>Course List</h3>
+      <ul id="courseList"></ul>
+      <button id="addCourseButton">Add New Course</button>
+      <button class="close-button">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
